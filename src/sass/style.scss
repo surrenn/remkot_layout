@@ -1,29 +1,32 @@
-@import "libs/bootstrap-reboot.min";
+//google font==========================================================================
 
-//google font
 // @import url("link");
 
-//local fonts
-// @import "font/font";
+//local font =================================================================
 
-//variables
-@import "variables/_variables.scss";
+@import "font/font";
 
-* {
-  font-family: $main-font;
-  font-weight: 400;
-  font-size: 18px;
-  color: $main-color;
-}
+//ICON font ============================================================================
 
-a {
-  color: $main-color;
+@import "font/iconfont";
 
-  &:hover {
-    text-decoration: none;
-    color: $main-color;
-  }
-}
+// SETTINGS ====================================================================
+
+// font =================================================================================
+$fontFamily: "", sans-serif;
+
+// colors ===================================================================
+$mainColor: ;
+
+// font settings ==============================================================
+$fontSize: 16px;
+$fontWeight: 500;
+
+// sizes ======================================================================
+$containerWidth: 1280px;
+
+// 0 - without paddings
+$containerPaddings: 15px;
 
 .wrapper {
   min-height: 100vh;
@@ -38,8 +41,11 @@ a {
 }
 
 ._container {
-  max-width: 1280px;
-  padding: 0 15px;
+  max-width: $containerWidth;
+  padding: 0 $containerPaddings;
   margin: 0 auto;
   box-sizing: content-box;
 }
+
+// reset styles=============================================================
+@import "base/null";

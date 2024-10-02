@@ -1,5 +1,45 @@
-// @font-face {
-//     font-family: "font name";
-//     font-weight: 400;
-//     src: url(../fonts/);
-//   }
+//SuisseIntl====================================================
+
+@font-face {
+  font-family: "SuisseIntl";
+  font-weight: 300;
+  src: url(../fonts/suisse_intl/SuisseIntl-Light.otf);
+}
+
+@font-face {
+  font-family: "SuisseIntl";
+  font-weight: 400;
+  src: url(../fonts/suisse_intl/SuisseIntl-Regular.otf);
+}
+
+@font-face {
+  font-family: "SuisseIntl";
+  font-weight: 450;
+  src: url(../fonts/suisse_intl/SuisseIntl-Book.otf);
+}
+
+@font-face {
+  font-family: "SuisseIntl";
+  font-weight: 500;
+  src: url(../fonts/suisse_intl/SuisseIntl-Medium.otf);
+}
+
+//Graphik LC Web============================================================
+
+@font-face {
+  font-family: "Graphik LC Web";
+  font-weight: 400;
+  src: url(../fonts/graphik_lc_web/Graphik-LC-Web-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Graphik LC Web Italic";
+  font-weight: 400;
+  src: url(../fonts/graphik_lc_web/Graphik-LC-Web-Regular-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Graphik LC Web";
+  font-weight: 500;
+  src: url(../fonts/graphik_lc_web/Graphik-LC-Web-Medium.ttf);
+}

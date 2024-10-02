@@ -1,0 +1,43 @@
+.main {
+  &__proofs {
+  }
+}
+.proofs {
+  padding-top: 70px;
+  &__container {
+  }
+
+  &__title {
+  }
+
+  &__slider {
+    margin-top: 50px;
+  }
+}
+
+.slider-proofs {
+  &__screen {
+    display: flex;
+
+    column-gap: 13px;
+  }
+
+  &__item {
+  }
+}
+.item-proof {
+  position: relative;
+
+  &__caption {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding: 10px;
+    background-color: #fff;
+    font-family: $secondFontFamily;
+    border-radius: 0 16px 16px 0;
+    font-size: 20px;
+    line-height: 130%;
+    color: #191919;
+  }
+}

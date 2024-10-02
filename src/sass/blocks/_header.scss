@@ -1,0 +1,152 @@
+.header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  top: 30px;
+  &__container {
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 16px 30px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+
+    @media (max-width: 992px) {
+      background: none;
+      backdrop-filter: none;
+      padding: 10px 15px;
+    }
+  }
+
+  &__logo {
+    display: block;
+    max-width: 180px;
+    height: 32px;
+    margin-right: 194px;
+
+    @media (max-width: 1400px) {
+      margin-right: 50px;
+    }
+
+    @media (max-width: 992px) {
+      display: none;
+    }
+
+    &_mobile {
+      display: none;
+
+      @media (max-width: 992px) {
+        display: block;
+        flex: 1 1 auto;
+      }
+    }
+  }
+
+  &__menu-list {
+    flex: 1 1 auto;
+  }
+
+  &__contacts {
+  }
+}
+
+.menu-list {
+  @media (max-width: 992px) {
+    display: none;
+  }
+  &__items {
+    display: flex;
+    column-gap: 40px;
+
+    @media (max-width: 1300px) {
+      column-gap: 17px;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-weight: 500;
+    color: $mainColor;
+  }
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  & > * {
+    flex: 0 0 auto;
+  }
+  &__phone {
+    margin-right: 30px;
+    font-weight: 500;
+
+    @media (max-width: 1300px) {
+      display: none;
+    }
+  }
+
+  &__whatsapp {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+
+    @media (max-width: 992px) {
+      width: 32px;
+      height: 32px;
+
+      img {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+
+  &__btn {
+    background-color: $greenBtn;
+    font-weight: 500;
+    padding: 14px 27px;
+    border-radius: 50%;
+    border-radius: 24px;
+
+    @media (max-width: 992px) {
+      font-size: 14px;
+      padding: 9px 25px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 3px;
+  span {
+    display: block;
+    height: 1.5px;
+    background-color: #fff;
+    width: 18px;
+    border-radius: 20px;
+  }
+
+  @media (max-width: 992px) {
+    display: flex;
+  }
+}

@@ -150,4 +150,19 @@
   @media (max-width: 992px) {
     display: flex;
   }
+
+  &_active {
+    row-gap: 0;
+    span {
+      &:nth-child(1) {
+        transform: rotate(45deg);
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+    }
+  }
 }

@@ -7,7 +7,7 @@
   padding-bottom: 140px;
   &__big-container {
     max-width: 1500px;
-    background: url("../img/review/review_bg.png") center center / cover
+    background: url("../img/revieww/review_bg.png") center center / cover
       no-repeat;
     border-radius: 32px;
     padding-top: 70px;
@@ -25,8 +25,7 @@
   }
 
   &__btn {
-    margin-top: 66px;
-    text-align: center;
+    margin-top: 50px;
   }
 }
 
@@ -54,5 +53,31 @@
     text-align: right;
     color: #000;
     font-weight: 500;
+  }
+}
+
+.btn-review {
+  border-radius: 500px;
+  padding: 23px 40px;
+  max-width: 262px;
+  min-height: 78px;
+  background-color: $greenBtn;
+  display: flex;
+  margin: 0 auto;
+  column-gap: 10px;
+
+  span {
+    font-family: $secondFontFamily;
+    font-weight: 450;
+    line-height: 30px;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 500px;
+    width: 32px;
+    height: 32px;
   }
 }

@@ -11,7 +11,7 @@
       <header class="header">
         <div class="header__container _big">
           <a href="" class="header__logo">
-            <img src="./icons/logo.svg" alt="remkot" />
+            <img src="./icons/logo_header.svg" alt="remkot" />
           </a>
 
           <a href="" class="header__logo_mobile">
@@ -51,6 +51,35 @@
             <span></span>
             <span></span>
             <span></span>
+          </div>
+
+          <div class="mobile-menu">
+            <nav class="mobile-menu__nav nav-menu">
+              <ul class="nav-menu__list">
+                <li class="nav-menu__item">
+                  <a href="" class="nav-menu__link">Стоимость</a>
+                </li>
+                <li class="nav-menu__item">
+                  <a href="" class="nav-menu__link">Бренды</a>
+                </li>
+                <li class="nav-menu__item">
+                  <a href="" class="nav-menu__link">Фото работ</a>
+                </li>
+                <li class="nav-menu__item">
+                  <a href="" class="nav-menu__link">Отзывы</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="mobile-menu__actions actions-mob">
+              <a href="" class="actions-mob__icon contacts__whatsapp">
+                <img src="./icons/Group-284.svg" alt="whatsapp" />
+              </a>
+
+              <a href="" class="actions-mob__btn contacts__btn"
+                >вызвать мастера</a
+              >
+            </div>
           </div>
         </div>
       </header>
@@ -366,7 +395,9 @@
                 время
               </div>
 
-              <a href="" class="btn-section__btn">Вызвать мастера</a>
+              <a href="" class="btn-section__btn call-master__btn"
+                >Вызвать мастера</a
+              >
             </div>
           </div>
         </section>
@@ -520,7 +551,13 @@
               </div>
 
               <div class="review__btn">
-                <a href="" class="btn-section__btn"> Оставить отзыв </a>
+                <a href="" class="btn-review">
+                  <div class="btn-review__icon">
+                    <img src="./icons/Group-284.svg" alt="whatsapp" />
+                  </div>
+
+                  <span>Оставить отзыв</span>
+                </a>
               </div>
 
               <div class="review__apos">
@@ -605,6 +642,51 @@
           </div>
         </div>
       </footer>
+
+      <!-- POPUP================================ -->
+
+      <!-- <div class="popup">
+        <div class="popup-master">
+          <div class="popup-master__title">Вызвать мастера</div>
+
+          <form action="" class="popup-master__form master-form">
+            <input
+              type="text"
+              class="master-form__input"
+              placeholder="Ваше имя"
+            />
+            <input
+              type="text"
+              class="master-form__input"
+              placeholder="Телефон"
+            />
+
+            <button type="submit" class="master-form__btn">
+              Вызвать мастера
+            </button>
+          </form>
+
+          <div class="popup-master__caption">Перезвоним в течение 20 минут</div>
+
+          <div class="popup-master__close">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 5L5 19M5.00001 5L19 19"
+                stroke="#001A72"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div> -->
     </div>
   </body>
 </html>

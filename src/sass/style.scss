@@ -65,6 +65,10 @@ $containerPaddings: 15px;
   font-weight: 500;
   font-size: 46px;
   line-height: 130%;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 // reset styles=============================================================
@@ -82,3 +86,5 @@ $containerPaddings: 15px;
 @import "blocks/review";
 @import "blocks/footer";
 @import "blocks/proofs";
+@import "blocks/popup/popup";
+@import "blocks/mobile-menu";

@@ -6,9 +6,12 @@
 .promo {
   padding-bottom: 50px;
   position: relative;
-  min-height: 1080px;
   z-index: 0;
   background: url("../img/promo/promo_bg.png") center center / cover no-repeat;
+
+  @media (max-width: 768px) {
+    padding-bottom: 0px;
+  }
 
   &__container {
   }
@@ -86,6 +89,10 @@
 
   &__benefit {
     margin-top: 135px;
+
+    @media (max-width: 768px) {
+      margin-top: 116px;
+    }
   }
 
   &__ellipse {
@@ -163,8 +170,12 @@
   padding: 20px;
   flex: 0 0 250px;
   min-height: 140px;
-
   background: rgba(255, 255, 255, 0.05);
+
+  @media (max-width: 768px) {
+    flex: 1 0 50%;
+    min-height: 117px;
+  }
 
   &__icon {
     height: 36px;
@@ -174,6 +185,10 @@
   &__caption {
     line-height: 130%;
     margin-top: 18px;
+
+    @media (max-width: 567px) {
+      margin-top: 16px;
+    }
   }
 
   &_promo {
@@ -188,6 +203,11 @@
   align-items: center;
   justify-content: center;
   column-gap: 100px;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+
   &__item {
     flex: 0 0 200px;
     opacity: 0.1;

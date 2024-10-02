@@ -17,6 +17,19 @@
     align-items: center;
     padding-top: 60px;
     padding-bottom: 47px;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 60px;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      align-items: center;
+      row-gap: 0px;
+    }
   }
 
   &__descr {
@@ -27,6 +40,12 @@
     display: block;
     max-width: 221px;
     height: 37px;
+
+    @media (max-width: 768px) {
+      margin: 0 auto;
+      max-width: 147px;
+      height: 25px;
+    }
 
     img {
       width: 100%;
@@ -40,18 +59,36 @@
     line-height: 120%;
     color: #fff;
     margin-top: 28px;
+
+    @media (max-width: 768px) {
+      margin-top: 10px;
+      font-size: 13px;
+      text-align: center;
+      font-weight: 300;
+    }
   }
 
   &__nav {
+    @media (max-width: 768px) {
+      margin-top: 30px;
+    }
   }
 
   &__call {
+    @media (max-width: 768px) {
+      margin-top: 40px;
+    }
   }
 }
 
 .nav-footer {
   display: flex;
   column-gap: 60px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    row-gap: 30px;
+  }
   &__list {
     display: flex;
     flex-direction: column;
@@ -62,10 +99,19 @@
     font-family: $secondFontFamily;
     font-weight: 400;
     color: #fff;
+
+    @media (max-width: 768px) {
+      font-weight: 300;
+      font-size: 18px;
+      text-align: center;
+    }
   }
 }
 .call-footer {
   &__phone {
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   &__number {
@@ -88,11 +134,14 @@
   &__btn {
     display: block;
     margin-top: 34px;
+
+    @media (max-width: 768px) {
+      margin-top: 50px;
+      padding: 23px 40px;
+    }
   }
 }
 
-.footer-bottom {
-}
 .bottom-footer {
   &__container {
     padding-top: 15px;

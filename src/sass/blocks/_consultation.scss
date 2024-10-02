@@ -5,16 +5,37 @@
 .consultation {
   padding-top: 70px;
 
+  @media (max-width: 768px) {
+    padding-top: 40px;
+  }
+
   &__big-container {
     min-height: 453px;
     padding: 90px 15px;
     position: relative;
     border-radius: 40px;
-    background: url("../img/consultation/consult__bg.png") center center / cover
+    background: url("../img/consultation/consult_bg.png") center center / cover
       no-repeat;
+
+    @media (max-width: 992px) {
+      background: url("../img/consultation/consult__bg_rotate.png") center
+        center / cover no-repeat;
+    }
+
+    @media (max-width: 768px) {
+      border-radius: 24px;
+      padding: 30px;
+    }
   }
   &__container {
     display: flex;
+    padding: 0;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
+    }
   }
 
   &__left {
@@ -26,6 +47,10 @@
     span {
       color: #ce2027;
     }
+
+    @media (max-width: 992px) {
+      text-align: center;
+    }
   }
 
   &__subtitle {
@@ -33,6 +58,10 @@
     font-size: 20px;
     line-height: 130%;
     color: #191919;
+
+    @media (max-width: 992px) {
+      text-align: center;
+    }
   }
 
   &__btn {
@@ -45,6 +74,14 @@
       font-family: $secondFontFamily;
       border-radius: 500px;
     }
+
+    @media (max-width: 992px) {
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
   }
 
   &__img {
@@ -53,6 +90,19 @@
     top: 8px;
     max-width: 370px;
     height: 443px;
+
+    @media (max-width: 1750px) {
+      right: 30px;
+    }
+
+    @media (max-width: 992px) {
+      position: unset;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 254px;
+      height: 305px;
+    }
 
     img {
       width: 100%;

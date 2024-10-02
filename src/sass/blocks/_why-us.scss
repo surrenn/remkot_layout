@@ -4,10 +4,17 @@
 }
 .why-us {
   padding-top: 70px;
+  @media (max-width: 768px) {
+    padding-top: 30px;
+  }
   &__big-container {
     padding: 70px 15px;
     background-color: $gray;
     border-radius: 40px;
+
+    @media (max-width: 768px) {
+      padding: 20px;
+    }
   }
 
   &__container {
@@ -18,19 +25,29 @@
 
   &__block {
     margin-top: 50px;
+
+    @media (max-width: 768px) {
+      margin-top: 20px;
+    }
   }
 }
 
 .advantages {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: 25px;
   row-gap: 5px;
+
+  @media (max-width: 904px) {
+    row-gap: 10px;
+    column-gap: 15px;
+  }
   &__item {
   }
 }
 .advantages-item {
-  flex: 0 0 410px;
+  flex: 0 1 410px;
   min-height: 217px;
   padding: 30px 10px 34px 0;
   display: flex;
@@ -39,9 +56,22 @@
   background: rgba(255, 255, 255, 0.02);
   border-radius: 16px;
   column-gap: 20px;
+
+  @media (max-width: 768px) {
+    flex: 0 1 320px;
+    min-height: 162px;
+    padding: 20px 20px 20px 10px;
+    align-items: flex-start;
+    column-gap: 10px;
+  }
   &__img {
     flex: 0 0 128px;
     height: 128px;
+
+    @media (max-width: 768px) {
+      flex: 0 0 80px;
+      height: 80px;
+    }
 
     img {
       width: 100%;
@@ -57,6 +87,10 @@
     font-size: 22px;
     line-height: 130%;
     font-family: $secondFontFamily;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 
   &__text {
@@ -65,5 +99,10 @@
     font-weight: 300;
     font-size: 17px;
     line-height: 130%;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      font-weight: 400;
+    }
   }
 }

@@ -73,6 +73,10 @@
       font-weight: 450;
       font-family: $secondFontFamily;
       border-radius: 500px;
+
+      &:hover {
+        background-color: #4fa95e;
+      }
     }
 
     @media (max-width: 992px) {

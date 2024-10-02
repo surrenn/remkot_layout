@@ -66,6 +66,10 @@
   margin: 0 auto;
   column-gap: 10px;
 
+  &:hover {
+    background-color: #4fa95e;
+  }
+
   span {
     font-family: $secondFontFamily;
     font-weight: 450;

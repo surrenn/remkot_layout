@@ -100,6 +100,10 @@
     font-weight: 400;
     color: #fff;
 
+    &:hover {
+      color: rgb(209, 206, 206);
+    }
+
     @media (max-width: 768px) {
       font-weight: 300;
       font-size: 18px;
@@ -118,9 +122,14 @@
     font-family: $secondFontFamily;
     font-size: 22px;
     color: #fff;
+
+    &:hover {
+      color: rgb(209, 206, 206);
+    }
   }
 
   &__caption {
+    display: block;
     font-family: $secondFontFamily;
     font-weight: 400;
     font-size: 15px;
@@ -129,6 +138,10 @@
     color: #fff;
     margin-top: 4px;
     padding-left: 10px;
+
+    &:hover {
+      color: rgb(209, 206, 206);
+    }
   }
 
   &__btn {

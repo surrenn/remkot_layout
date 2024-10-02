@@ -131,6 +131,9 @@
     background: $greenBtn;
     font-weight: 450;
     font-family: $secondFontFamily;
+    &:hover {
+      background-color: #4fa95e;
+    }
 
     @media (max-width: 768px) {
       padding: 18px 30px;
